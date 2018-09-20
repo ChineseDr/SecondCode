@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <com.ray.uicustomviews.fragments.TabButton
+        android:id="@+id/hbtn"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        app:text="Home" />
+
+    <com.ray.uicustomviews.fragments.TabButton
+        android:id="@+id/cbtn"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        app:src="@mipmap/contact"
+        app:text="Contact"/>
+
+    <com.ray.uicustomviews.fragments.TabButton
+        android:id="@+id/fbtn"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        app:src="@mipmap/found"
+        app:text="Found"/>
+
+    <com.ray.uicustomviews.fragments.TabButton
+        android:id="@+id/mbtn"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        app:src="@mipmap/mine"
+        app:text="Mine"/>
+
+</LinearLayout>
