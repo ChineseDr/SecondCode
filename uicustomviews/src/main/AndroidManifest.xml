@@ -12,13 +12,19 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".SecondActivity"></activity>
         <activity android:name=".ThirdActivity"></activity>
-        <receiver android:name=".broadcast.FirstBroadcast"></receiver>
+        <activity android:name=".ForthActivity"></activity>
+        <receiver android:name=".broadcast.FirstBroadcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ray.uicustomviews.broadcast.FIRSTBROADCAST" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
