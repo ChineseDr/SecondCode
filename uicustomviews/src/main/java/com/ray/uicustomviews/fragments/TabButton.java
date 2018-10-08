@@ -24,6 +24,7 @@ public class TabButton extends LinearLayout {
         icon.setImageResource(ta.getResourceId(R.styleable.TabButton_src,R.mipmap.home));
         TextView name=findViewById(R.id.name);
         name.setText(ta.getString(R.styleable.TabButton_text));
+        ta.recycle();
     }
 
     public TabButton(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
