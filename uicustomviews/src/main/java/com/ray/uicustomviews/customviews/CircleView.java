@@ -22,7 +22,7 @@ public class CircleView extends View {
     private float mCircleXY;
     private float mRadius;
     private int length;
-    private int mTextSize=80;
+    private int mTextSize=15;
     private int mSweepAngle=0;
     private String mTextShow="Android";
     public CircleView(Context context) {
@@ -94,10 +94,11 @@ public class CircleView extends View {
          * 第二个参数：开始显示的位置，文本的第几个字符开始显示
          * 第三个参数：显示结束的位置，文本长度（第几个字符结束）
          * 第四个参数：文本显示的x轴位置，中心点x周坐标，默认在字符串左边
-         * 第五个参数：文本显示的y轴位置，中心点y周坐标,默认在字符串下方
+         * 第五个参数：文本显示的y轴位置，中心点y周坐标,默认在字符串下方,
+         * 设置center时，实际位置在指定位置上方1/4 size处
          * 第六个采纳数：画笔
          */
-        canvas.drawText(mTextShow,0,mTextShow.length(),mCircleXY,mCircleXY+(mTextSize),mTextPaint);
+        canvas.drawText(mTextShow,0,mTextShow.length(),mCircleXY,mCircleXY+(mCircleXY/4),mTextPaint);
         Log.d(TAG, "onDraw: drawText"+mCircleXY+(mTextSize));
     }
 
