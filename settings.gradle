@@ -1,1 +1,1 @@
-include ':app', ':chart', ':uicustomviews'
+include ':app', ':chart', ':uicustomviews', ':component'

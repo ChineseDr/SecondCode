@@ -17,7 +17,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view =inflater.inflate(R.layout.fragment_first,container,false);
         CircleView circleView=view.findViewById(R.id.circle_process);
-        circleView.setSweepValue(90);
+        circleView.setSweepValue(180);
         return view;
     }
 }
