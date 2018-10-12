@@ -31,7 +31,7 @@ public class AudioStrip extends View {
         mPaint = new Paint();
         mPaint.setColor(Color.GREEN);
         mPaint.setStyle(Paint.Style.FILL);
-        mRectCount = 12;
+        mRectCount = 20;
     }
 
     public AudioStrip(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
